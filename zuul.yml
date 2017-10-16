@@ -1,0 +1,29 @@
+endpoints:
+  restart:
+    enabled: true
+  shutdown:
+    enabled: true
+
+logging:
+  level:
+    root: INFO
+    com.netflix.discovery: DEBUG
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://eureka.eureka--staging:8761/eureka/
+  instance:
+    preferIpAddress: true
+    instance-id: ${spring.cloud.client.ipAddress}:${server.port}
+      
+zuul:
+  routes:
+    testa:
+      path: /liaojian/**
+      serviceId: liaoj-client
+    
+spring:
+  sleuth:
+    sampler:
+      percentage: 1.0
