@@ -20,7 +20,7 @@ eureka:
 zuul:
   routes:
     testa:
-      path: /liaojian/**
+      path: /test/**
       serviceId: liaoj-client
     
 spring:
