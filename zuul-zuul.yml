@@ -12,7 +12,7 @@ logging:
 eureka:
   client:
     serviceUrl:
-      defaultZone: http://eureka.eureka--test:8761/eureka/
+      defaultZone: http://euraka-eureka.micro-service:8761/eureka/
   instance:
     preferIpAddress: true
     instance-id: ${spring.cloud.client.ipAddress}:${server.port}
