@@ -21,7 +21,7 @@ zuul:
   routes:
     testa:
       path: /test1/**
-      serviceId: liaoj-client
+      serviceId: asfdemo-client
     
 spring:
   sleuth:
